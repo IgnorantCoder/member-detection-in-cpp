@@ -31,7 +31,6 @@ public:
     static constexpr bool value = type::value;
 };
 
-
 int main() {
     std::cout
         << std::boolalpha
@@ -39,7 +38,6 @@ int main() {
         << has_size_type<int>::value << std::endl                // false
         << has_size<std::vector<int>>::value << std::endl        // true
         << has_size<int>::value << std::endl;                    // false
-
 
     return 0;
 }
